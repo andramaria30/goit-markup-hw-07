@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
 
     <link
@@ -49,9 +50,9 @@
       <!-- Navigation -->
       <div class="header-div container">
         <nav class="nav">
-          <a href="./index.html" class="logo-link link">
-            Web<span class="logo-second-word">Studio</span></a
+          <a href="./index.html" class="logo-link link"><span id="blue">Web</span><span class="logo-second-word">Studio</span></a
           >
+          <div class="js-open-menu"><img src="images/charm_menu-hamburger.svg" alt=""></div>
           <ul class="list nav-menu">
             <li><a href="./index.html" class="nav-link studio">Studio</a></li>
             <li>
@@ -82,9 +83,9 @@
       <!--First Section-->
 
       <section class="first-section">
-        <div class="container">
+        <div class="container1">
           <h1 class="title-first-section">
-            Effective Solutions for Your Business
+            Effective Solutions <br> for Your Business
           </h1>
           <button data-modal-open class="button-first-section" type="button" >
             Order Service
@@ -96,7 +97,7 @@
 
       <section class="second-section">
         <div class="container">
-          <h2 class="secondtitle visually-hidden">What Are We Doing</h2>
+
           <ul class="list">
             <li class="second-section-list">
               <!--Primul element al listei conține un <div> care servește ca container pentru iconiță-->
@@ -188,7 +189,7 @@
                 width="264"
               />
               <div class="container-forth">
-                <h3 class="title-second-section">Mark Guerrero</h3>
+                <h3 class="title-second-section name">Mark Guerrero</h3>
                 <p class="paragraph-second-section-forth">Product Designer</p>
 
                 <ul class="forth-social-media">
@@ -226,7 +227,7 @@
             <li class="background-special">
               <img src="./images/portrait-2.jpg" alt="Tom Ford" width="264" />
               <div class="container-forth">
-                <h3 class="title-second-section">Tom Ford</h3>
+                <h3 class="title-second-section name">Tom Ford</h3>
                 <p class="paragraph-second-section-forth">Frontend Developer</p>
                 <ul class="forth-social-media">
                   <li class="forth-icons">
@@ -268,7 +269,7 @@
                 width="264"
               />
               <div class="container-forth">
-                <h3 class="title-second-section">Camila Garcia</h3>
+                <h3 class="title-second-section name">Camila Garcia</h3>
                 <p class="paragraph-second-section-forth">Marketing</p>
                 <ul class="forth-social-media">
                   <li class="forth-icons">
@@ -310,7 +311,7 @@
                 width="264"
               />
               <div class="container-forth">
-                <h3 class="title-second-section">Daniel Wilson</h3>
+                <h3 class="title-second-section name">Daniel Wilson</h3>
                 <p class="paragraph-second-section-forth">UI Designer</p>
                 <ul class="forth-social-media">
                   <li class="forth-icons">
@@ -550,17 +551,12 @@
 
 
            <div class="container-checkbox">
-            <input
-             class="input-checkbox visually-hidden" id="user-privacy" 
-             type="checkbox" 
+            <input type="checkbox" class="input-checkbox visually-hidden" id="user-privacy" 
              value="true" 
              name="user-privacy">
+             
             <label for="user-privacy" class="name-label-checkbox" >I accept the terms and conditions of the
-            <span class="span-privacy">
-              <svg class="svg-checkbox" width="10" height="8">
-                <use href="./images.svg#check"></use>
-              </svg>
-            </span>
+
             <a href="" class="link-privacy">Privacy Policy</a>
           </label>
 
@@ -587,7 +583,47 @@
      
 
     </div>
+
+    <div class="js-menu-container">
+      <div  class="js-close-menu">
+      <img src="images/close-black-18dp (2) 1.svg" alt="">
+    </div>
+    
+      <div class="header2">
+        <ul>
+         <a href="index.html" id="this"> <li>Studio</li></a>
+         <a href="portfolio.html">   <li>Portfolio</li></a>
+         <a href=""> <li>Contacts</li></a>
+        </ul>
+        <div class="bottom">
+          <a href="mailto:info@devstudio.com" id="number">+11 (000) 111-11-11</a>
+          <a href="tel:+110001111111" id="email">info@devstudio.com</a>
+          <div class="socialmedia">
+            <a href=""> <svg class="last-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg></a>
+            <a href=""> <svg class="last-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg></a>
+            <a href=""><svg class="last-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg></a>
+            <a href=""> <svg class="last-icons" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script defer src="./mobile.js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
 
 
   </body>
