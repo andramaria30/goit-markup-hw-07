@@ -354,7 +354,7 @@ letter-spacing: 0.4px;
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
-  text-align: center;
+  text-align: left;
 }
 @media (min-width: 768px) {
   .paragraph-second-section {
@@ -857,6 +857,7 @@ img {
   letter-spacing: 0.32px;
   max-width: 264px;
   margin-top: 15px;
+  text-align: left;
 
 }
 
